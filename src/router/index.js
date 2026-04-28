@@ -6,6 +6,7 @@ import AddBookView from '../views/AddBookView.vue'
 import FavouritesView from '../views/FavouritesView.vue'
 import AdminBooksView from '../views/AdminBooksView.vue'
 import AdminAuthorsView from '../views/AdminAuthorsView.vue'
+import AdminUsersView from '../views/AdminUsersView.vue'
 
 const routes = [
   { path: '/', component: HomeView },
@@ -15,6 +16,7 @@ const routes = [
   { path: '/favourites', component: FavouritesView, meta: { requiresAuth: true } },
   { path: '/admin/books', component: AdminBooksView, meta: { requiresAdmin: true } },
   { path: '/admin/authors', component: AdminAuthorsView, meta: { requiresAdmin: true } },
+  { path: '/admin/users', component: AdminUsersView, meta: { requiresAdmin: true } },
 ]
 
 const router = createRouter({
