@@ -43,6 +43,7 @@ function logout() {
         <router-link to="/books" class="nav-link">All Books</router-link>
         <router-link to="/add" class="nav-link">Add Book</router-link>
         <router-link to="/favourites" class="nav-link">Favourites</router-link>
+        <router-link to="/my-requests" class="nav-link">My Requests</router-link>
         <button class="nav-link nav-logout" @click="logout">Logout</button>
       </template>
 
@@ -52,6 +53,7 @@ function logout() {
         <router-link to="/admin/books" class="nav-link">Books</router-link>
         <router-link to="/admin/authors" class="nav-link">Authors</router-link>
         <router-link to="/admin/users" class="nav-link">Users</router-link>
+        <router-link to="/admin/requests" class="nav-link">Requests</router-link>
         <button class="nav-link nav-logout" @click="logout">Logout</button>
       </template>
     </div>
