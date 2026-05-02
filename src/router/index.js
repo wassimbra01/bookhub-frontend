@@ -7,6 +7,10 @@ import FavouritesView from '../views/FavouritesView.vue'
 import AdminBooksView from '../views/AdminBooksView.vue'
 import AdminAuthorsView from '../views/AdminAuthorsView.vue'
 import AdminUsersView from '../views/AdminUsersView.vue'
+import AdminRequestsView from '../views/AdminRequestsView.vue'
+import MyRequestsView from '../views/MyRequestsView.vue'
+
+
 
 const routes = [
   { path: '/', component: HomeView },
@@ -17,6 +21,10 @@ const routes = [
   { path: '/admin/books', component: AdminBooksView, meta: { requiresAdmin: true } },
   { path: '/admin/authors', component: AdminAuthorsView, meta: { requiresAdmin: true } },
   { path: '/admin/users', component: AdminUsersView, meta: { requiresAdmin: true } },
+  { path: '/admin/requests', component: AdminRequestsView, meta: { requiresAdmin: true } },
+  { path: '/my-requests', component: MyRequestsView, meta: { requiresAuth: true } },
+
+
 ]
 
 const router = createRouter({
